@@ -1,6 +1,6 @@
 # hkmqtt
 
-This is a prototype mqtt-homekit bridge for a basic temperature sensor. It is based on[hklight by Matthias Hochgatterer](https://github.com/brutella)
+This is a prototype mqtt-homekit bridge for a basic temperature sensor. It is based on [hklight by Matthias Hochgatterer](https://github.com/brutella)
 # Installation
 
 ## Go
