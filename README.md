@@ -1,7 +1,6 @@
-# hklight
+# hkmqtt
 
-This is a sample project of a HomeKit light bulb using [HomeControl](https://github.com/boisjacques/hc). [Read more](#TODO).
-
+This is a prototype mqtt-homekit bridge for a basic temperature sensor. It is based on[hklight by Matthias Hochgatterer](https://github.com/brutella)
 # Installation
 
 ## Go
@@ -10,17 +9,17 @@ Make sure that you have a working [Go installation](http://golang.org/doc/instal
 
 ## Checkout
 
-- Clone project `git clone https://github.com/brutella/hklight && cd hklight`
+- Clone project `git clone https://github.com/boisjacques/hklight && cd hklight`
 - Install dependencies `go get`
 
 ## Build
 
-Build with `go build hklightd.go`.
+Build with `go build hktemperature.go`.
 
 ## Run
 
-Execute the executable `./hklightd` or run with `go run hklightd.go`.
+Execute the executable `./hktemperature` or run with `go run hktemperature.go`.
 
 # License
 
-hklight is available under a non-commercial license. See the LICENSE file for more info.
+hktemperature is available under a non-commercial license. See the LICENSE file for more info.
