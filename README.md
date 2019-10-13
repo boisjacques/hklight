@@ -1,6 +1,6 @@
 # hklight
 
-This is a sample project of a HomeKit light bulb using [HomeControl](https://github.com/brutella/hc). [Read more](#TODO).
+This is a sample project of a HomeKit light bulb using [HomeControl](https://github.com/boisjacques/hc). [Read more](#TODO).
 
 # Installation
 
