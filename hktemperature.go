@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/binary"
 	"flag"
-	"fmt"
 	"github.com/boisjacques/hc"
 	"github.com/boisjacques/hc/accessory"
 	"github.com/boisjacques/hc/mqtt"
@@ -25,7 +24,7 @@ func refresh(acc accessory.Thermometer, c chan []byte) {
 		stringified := string(payload)
 		if temp, err := strconv.ParseFloat(stringified, 32); err == nil {
 			acc.TempSensor.CurrentTemperature.SetValue(temp)
-			fmt.Printf("Temperature set to %f\n", temp)
+			log.Printf("Temperature set to %f\n", temp)
 		}
 
 	}
@@ -50,7 +49,7 @@ func main() {
 
 	go refresh(*acc, c)
 
-	t, err := hc.NewIPTransport(hc.Config{Pin: "32191123"}, acc.Accessory)
+	t, err := hc.NewIPTransport(hc.Config{Pin: "11223344"}, acc.Accessory)
 	if err != nil {
 		log.Fatal(err)
 	}
